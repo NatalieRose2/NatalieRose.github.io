@@ -96,7 +96,8 @@
                 <p>Functions to calculate the minimum and maximum distances between agents were also added, ensuring that agents were not being compared against themselves.</p>
                 <p>The code to run these functions and view the results can be found <a href='#'>here</a></p>
                 <h3>Adding a secondary agent</h3>
-                <p>To add to the complexity of the model, wolves were added as secondary agents that the sheep can also interact with. The wolves are programmed to move faster than the sheep</p>
+                <p>To add to the complexity of the model, wolves were added as secondary agents that the sheep can also interact with. Although they have the same movement function built in, the wolves are programmed to move faster than the sheep across the environment. Another function that has been programmed for the wolves means that if they come into close proximity to one of the sheep agents, there is a 25% chance that the wolf will eat the sheep and 75% chance that the sheep will avoid this fate. If the sheep is eaten, the wolf's food store increases and the sheep agent is deleted from the map. Similarly to the sheep, if the wolf's store becomes too large, the wolf is sick and delivers it's store back to the environment.</p>
+                <p>The output for this model is a map of the resultant agents and environment after a set number of iterations of model runs.</p>
                 <p>The code for the secondary agents model and agent framework can be found <a href='#'>here</a></p>
 
             </article>
