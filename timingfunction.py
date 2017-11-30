@@ -2,7 +2,7 @@ import random
 import matplotlib.pyplot
 import datetime
 
-#create a function that calcualtes the distance between two agents
+#create a function that calculates the distance between two agents
 def distance_between(agent0, agent1):     
     return(((agent0[0]-agent1[0])**2)+((agent0[1]-agent1[1])**2))**0.5
 
