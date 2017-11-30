@@ -44,11 +44,6 @@
                 font-size: 20
             }
             
-             /*nav ul a:visited {
-                text-decoration: none;
-                color: grey;
-                font-size: 20
-            }       can add this in later if it works properly*/
             
             nav ul a:hover {
                 text-decoration: none; 
@@ -96,8 +91,13 @@
 
             <article>
                 <h1>Project Extras</h1>
-                <p>As an addition to the main model...</p>
-                <p>test</p>
+                <h3>Distance calculation and timing functions</h3>
+                <p>As an extra to the main model, timing functions were used to test how long various calculations took as the number of iterations increased. In this instance, the time taken to calculate all the distances between agents was calculated as the number of iterations increased by magnitude 10. After the run times had been calculated, they were plotted against a logarithmic scale of iterations so that the relationship between the two variables could be seen.</p>
+                <p>Functions to calculate the minimum and maximum distances between agents were also added, ensuring that agents were not being compared against themselves.</p>
+                <p>The code to run these functions and view the results can be found <a href='#'>here</a></p>
+                <h3>Adding a secondary agent</h3>
+                <p>To add to the complexity of the model, wolves were added as secondary agents that the sheep can also interact with. The wolves are programmed to move faster than the sheep</p>
+                <p>The code for the secondary agents model and agent framework can be found <a href='#'>here</a></p>
 
             </article>
 
