@@ -1,0 +1,95 @@
+<HTML>
+    <HEAD>
+        <STYLE>
+            div.frontpage {     /*this makes a border that goes the full width of the page*/
+                width: 100%;  
+                border: 1px solid gray;
+            }
+
+            header {
+                padding: 1em; /*adjusts the height of the header and footer*/
+                color: white;  /*font = white*/
+                background-color: #660022;  /*backdrop fill = dark grey*/
+                clear: left;
+                text-align: center;
+            }
+            
+            footer {
+                padding: 1em; /*adjusts the height of the header and footer*/
+                color: white;  /*font = white*/
+                background-color: #660022;  /*backdrop fill = dark grey*/ 
+                clear: left;
+                text-align: left;
+            }
+
+            nav {
+                float: left;  /*navigation pane appears on the left hand side of the page*/
+                max-width: 160px;
+                margin: 0;
+                padding: lem;
+            }
+
+            nav ul {  /*ul stands for unordered list*/ 
+                list-style-type: 1; /*none= no bullet points, 1= bullet points*/
+                padding: 1;
+                height: 200px;
+                position: fixed;
+                overflow: auto;
+            }
+
+            nav li a {
+                text-decoration: none;
+                display: block;
+                color: #000;
+                padding: 8px 20px;
+            }
+            
+            nav li a.active {
+                background-color: #80002a;
+                color: white;
+            }
+            
+            nav li a:hover:not(.active) {
+                background-color: lightgrey;
+                color: white;
+            }
+
+            article {
+                margin-left: 250px;
+                border-left: 2px solid black;  /*border width, solid or dashed*/
+                padding: 1em;
+                overflow:  hidden;
+            }
+        </STYLE>
+    </HEAD>
+    
+    <BODY>
+
+        <div class="frontpage">
+    
+            <header>
+                <h1> My Github</h1>
+            </header>
+        
+            <nav>
+                <ul>
+                    <1i><a class="active" href="#">About me</a></1i>
+                    <1i><a href="#">ABM project</a></1i>
+
+                </ul>
+            </nav>
+
+            <article>
+                <h1>About me</h1>
+                <p>My name is Natalie...</p>
+                <p>I am a PhD Student...</p>
+
+            </article>
+
+            <footer>Copyright &copy Natalie Rose, 2017</footer>
+
+        
+        </div>
+    
+    </BODY>
+</HTML>

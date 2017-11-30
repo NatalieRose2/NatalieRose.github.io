@@ -1,0 +1,119 @@
+<HTML>
+    <HEAD>
+        <STYLE>
+            div.frontpage {     /*this makes a border that goes the full width of the page*/
+                width: 100%;  
+                border: 1px solid gray;
+            }
+
+            header {
+                padding: 1em; /*adjusts the height of the header and footer*/
+                color: white;  /*font = white*/
+                background-color: #660022;  /*backdrop fill = dark grey*/
+                clear: left;
+                text-align: center;
+            }
+            
+            footer {
+                padding: 1em; /*adjusts the height of the header and footer*/
+                color: white;  /*font = white*/
+                background-color: #660022;  /*backdrop fill = dark grey*/ 
+                clear: left;
+                text-align: left;
+            }            
+                        
+            nav {
+                float: left;
+                max-width: 160px;
+                margin: 0;
+                padding: 1em;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 1em;
+                text-align: left;
+                text-indent: 3px;
+                line-height: 2
+            }   
+            
+            
+            nav ul a {
+                text-decoration: none; /*no underline or overline*/
+                color: black;
+                font-size: 20
+            }
+            
+             /*nav ul a:visited {
+                text-decoration: none;
+                color: grey;
+                font-size: 20
+            }       can add this in later if it works properly*/
+            
+            nav ul a:hover {
+                text-decoration: none; 
+                text-decoration-color: black;
+                color: black;
+                background-color: lightgrey;
+                font-size: 20
+            }
+            
+            
+            nav ul a.active {
+                text-decoration: underline;
+                text-decoration-color: darkred;
+                color: darkred;
+                font-size: 20;
+                font-weight: bold
+            }
+
+            article {
+                margin-left: 250px;
+                border-left: 2px solid black;  /*border width, solid or dashed*/
+                padding: 1em;
+                overflow:  hidden;
+                margin-right: 20px;
+                font-size: 18;
+            }
+        </STYLE>
+    </HEAD>
+    
+    <BODY>
+
+        <div class="frontpage">
+    
+            <header>
+                <h1>Natalie Rose: My Portfolio</h1>
+                
+                
+            </header>
+        
+            <nav>
+                <ul>
+                    <li><a href='https://natalierose2.github.io'>About Me</a></li>
+                    <li><a class='active' href='#'>ABM Project</a></li>
+                    <li><a href='https://natalierose2.github.io/Projectextras.html'>Project Extras</a></li>
+
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Agent-Based Model Project</h1>
+                <h3>About the Model</h3>
+                <p>This model was created as part of an assessment for the Programming for Social Scientsts: Core Skills module at the University of Leeds (module code GEOG5995) and written in Python. The purpose of the model is to create agents that can interact with the environment they are in, as well as other agents around them. These behaviour of these agents can be controlled using an agent framework which is connected to the main model which then runs the code.</p>
+                <p> In this instance, the (primary) agents are sheep that can randomly move around their environment. As they move they can nibble the enviroment and add to their personal stores of food. This store of food can then affect the speed at which the sheep move, and when they have a greater store of food, they have more energy and can move faster around the environment. However, once a store becomes too large, the sheep are sick and their store goes back to 0.</p>
+                <p>As well as interacting with the environment, the agents can interact with eachother, using a distance calcualtion function. When two sheep come in close proximity to one another, they can share their food stores. When this happens, if an agents store is particularly low, it is programmed to take a greater share of the total food store.</p>
+                <p>The outputs of this model include an animation map showing the model running as well as an environment file and a list of total stored food.</p>
+                <h3>Links</h3>
+                <p>The data needed to run this model can be found <a href='#'>here</a></p>
+                <p>The model and agent framework can be found <a href='#'>here</a></p>
+
+            </article>
+
+            <footer>Copyright &copy Natalie Rose, 2017*</footer>
+
+        
+        </div>
+    
+    </BODY>
+</HTML>
